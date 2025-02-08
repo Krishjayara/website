@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propose Day 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffccd5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #d63384;
+        }
+        p {
+            color: #555;
+        }
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .yes-btn {
+            background: #28a745;
+            color: white;
+        }
+        .yes-btn:hover {
+            background: #218838;
+        }
+        .no-btn {
+            background: #dc3545;
+            color: white;
+            position: relative;
+        }
+        .no-btn:hover {
+            background: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌹 Will You Be My Valentine? 💖</h1>
+        <p>You make my world brighter! 😊</p>
+        <div class="btn-container">
+            <button class="btn yes-btn" onclick="acceptProposal()">Yes! 💕</button>
+            <button class="btn no-btn" id="noBtn" onmouseover="moveNoButton()">No 😢</button>
+        </div>
+    </div>
+
+    <script>
+        function acceptProposal() {
+            document.querySelector(".container").innerHTML = "<h1>💖 Yay! 💖</h1><p>You made me the happiest! 😊</p>";
+        }
+
+        function moveNoButton() {
+            let button = document.getElementById("noBtn");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 100);
+            button.style.position = "absolute";
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>

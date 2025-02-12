@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Delicious Bites</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            background-color: #ff6347;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .nav-button {
+            background: linear-gradient(45deg, #ff4500, #ff6347);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+            margin: 5px;
+        }
+
+        .nav-button:hover {
+            background: linear-gradient(45deg, #e63900, #ff4500);
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .recipe img {
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .recipe:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Recipes</h1>
+    </header>
+    
+    <nav>
+        <button class="nav-button" onclick="location.href='home.html'">Home</button>
+        <button class="nav-button" onclick="location.href='recipes.html'">Recipes</button>
+        <button class="nav-button" onclick="location.href='about.html'">About Us</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact</button>
+    </nav>
+    
+    <section>
+        <h2>Featured Recipes</h2>
+        <div class="recipe">
+            <img src="spaghetti.jpg" alt="Spaghetti Carbonara">
+            <h3>Spaghetti Carbonara</h3>
+            <p>A classic Italian pasta dish with creamy sauce and crispy bacon.</p>
+        </div>
+        <div class="recipe">
+            <img src="buger.jpg" alt="Juicy Beef Burger">
+            <h3>Juicy Beef Burger</h3>
+            <p>A mouthwatering beef burger loaded with fresh ingredients.</p>
+        </div>
+        <div class="recipe">
+            <img src="pancakes.jpg" alt="Fluffy Pancakes">
+            <h3>Fluffy Pancakes</h3>
+            <p>Light and airy pancakes topped with syrup and berries.</p>
+        </div>
+    </section>
+</body>
+</html>
